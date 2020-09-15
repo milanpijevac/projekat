@@ -1,0 +1,88 @@
+
+
+/*js animacija*/
+
+.container .box-5.animation {
+  animation-name: fadeIn;
+  animation-duration: 1s;
+  opacity: 1;
+}
+.container .box-6.animation {
+  animation-name: fadeIn;
+  animation-duration: 2s;
+  opacity: 1;
+}
+.container .box-7.animation {
+  animation-name: fadeIn;
+  animation-duration: 1s;
+  opacity: 1;
+}
+
+@keyframes fadeIn {
+  0% { 
+    opacity: 0; 
+    transform: translateY(100%);
+  }
+  40%     { opacity: 0; }
+  100%    { opacity: 1; }
+}
+
+
+
+/*slider animacija*/
+.slider-wrapper{
+	width: 100%;
+	height: 500px;
+	border: 1px dashed black;
+	overflow: hidden;
+}
+.slider-inner-wrapper{
+	width: 11000px;
+	animation: move_slides 30s infinite;
+}
+.slider-inner-wrapper:hover{
+	animation-play-state: paused;
+}
+.slider-inner-wrapper img {
+	width: 1350px;
+	height: 500px;
+}
+
+@keyframes move_slides{
+	20%{
+		transform: translateX(0);
+	}
+	30%{
+		transform: translateX(-1350px);
+	}
+	40%{
+		transform: translateX(-2700px);
+	}
+	50%{
+		transform: translateX(-4050px);
+	}
+	60%{
+		transform: translateX(-5400px);
+	}
+	70%{
+		transform: translateX(-6750px);
+	}
+	80%{
+		transform: translateX(-8100px);
+	}
+	90%{
+		transform: translateX(-9450px);
+	}
+	100%{
+		transform: translateX(-9450px);
+	}
+}
+
+ul.slides{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+ul.slides li{
+	float: left;
+}

@@ -1,0 +1,682 @@
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	font-family: 'lemonada';
+}
+/*Header*/
+.header-wrapper {
+	background-color:  #990000;
+	position: relative;
+}
+
+.container {
+	max-width: 1350px;
+	width: 100%;
+	margin: auto;
+	padding: 0 10px;
+}
+
+.container-2 {
+	max-width: 1000px;
+	width: 100%;
+	margin: auto;
+	padding: 0 10px;
+}
+.header {
+	align-items: center;
+	padding: 0 20px; 
+	display: flex;
+	justify-content: space-between;
+	width: 100%;
+	transition: 0.6s;
+	
+}
+.header .logo {
+	width: 200px;
+}
+
+.nav ul {
+	
+	justify-content: center;
+	list-style: none;
+	display: flex;
+	
+}
+.nav ul li {
+	position: relative;
+	text-align: center;
+	display: block;
+	width: 20%;
+}
+.nav ul li a {
+	padding:  10px 20px;
+	text-decoration: none;
+	color: white;
+	border-radius: 20px;
+	font-size: 16px;
+	font-weight: bold;
+	display: block;
+	transition: 0.6s;
+	font-family: "helvetica";
+}
+.nav ul li a:hover {
+	background: white;
+	color: black;
+}
+
+.nav li.dropdown-wrapper:hover .dropdown {
+  display: block;
+}
+.nav li .dropdown {
+  display: none;
+}
+.dropdown {
+  position: absolute;
+  top: 100%;
+  right: 0;
+  left: auto;
+  padding: 10px;
+  border-radius: 5px;
+  background-color: white;
+  border: 1px solid gray;
+  width: 140px;
+}
+.dropdown  {
+	display: block;
+}
+.nav li.dropdown-wrapper .dropdown li a {
+	color: black;
+}
+/*kraj headera*/
+
+
+/*banner*/
+.banner {
+	background-image: url(../img/giros.jpg);
+	background-size: cover;
+	min-height:  700px;
+	 background-position: center;
+  background-repeat: no-repeat;
+  
+}
+.main-banner {
+	width: 700px;
+	margin: auto;
+	padding-top: 200px;
+}
+.main-banner h3{
+	color: red;
+	text-align: center;
+	font-size: 50px;
+	margin-bottom: 50px;
+	font-family: "helvetica";
+}
+.main-banner p {
+	font-family: "roboto";
+	color: white;
+	font-size: 45px;
+	text-align: center;
+	padding: 10px;
+	
+}
+.main-banner p:hover {
+	transition: 0.7s;
+	background-color: grey;
+	color: black;
+}
+/*About stranica*/
+.about {
+	display: flex;
+	flex-wrap: wrap;
+	width: 100%;
+	margin: 50px 10px;
+	border: 2px solid black;
+}
+.about .box-wrap {
+	width: 50%;
+	height: 800px;
+
+}
+.about .box-wrap .box-3 {
+	margin: 100px;
+
+}
+.about .box-wrap .box-4 {
+	padding: 10px;
+	background: #ffffb3;
+	box-shadow: 20px 20px 20px;
+
+
+}
+.about .box-wrap .box-3 h2 {
+	margin-bottom: 30px;
+	border-bottom: 2px solid #990000;
+	/*border-right: 2px dashed #990000;*/
+}
+.about .box-wrap .box-3 img {
+	width: 600px;
+}
+.about .box-wrap .box-3 .paragraph {
+	margin-top: 50px;
+	margin-left:  500px;
+}
+/*Button*/
+.button {
+	text-align: center;
+	margin: 50px 0;
+}
+.button a {
+	text-decoration: none;
+	padding: 20px 50px;
+	background-color: #990000 ;
+	color: white;
+	border-radius: 30px;
+	font-size: 20px;
+	transition: 0.8s;
+}
+.button a:hover {
+	color: red; ;
+	background-color:  white; 
+	transition: 2s;
+}
+.hide {
+	display: none;
+}
+.hide p {
+	text-align: center;
+	font-weight: bold;
+	color: red;
+	font-size: 20px;
+
+	
+}
+.form {
+	background-color:  #ffffb3;
+	padding: 20px 0;
+}
+.prijava {
+	padding: 40px 0px;
+	margin: auto;
+	width: 500px;
+	text-align: center;
+	margin-top: 10px;
+	background-color: black;
+	border-radius: 50px;
+}
+.input {
+	padding: 0px 100px;
+}
+.input h2 {
+	color: white;
+}
+.input input {
+	width: 100%;
+	padding: 7px 10px;
+	border-radius: 10px;
+}
+.control {
+	padding: 10px 0;
+}
+
+
+
+
+
+/*Vodic strana*/
+.lang {
+	margin: auto;
+	padding: 25px 0;
+	background-color: #ffffb3;
+	text-transform: uppercase;
+	text-align: center;
+	border-bottom: 2px solid black;
+	border-top-left-radius: 50px;
+	border-top-right-radius: 50px;
+
+	
+}
+.lang-box-wrapper {
+	background-color:   #e6e6e6
+;
+	padding: 90px 20px;
+
+}
+.lang-box {
+	border: 1px solid black;
+	margin: auto;
+	font-size: 30px;
+	line-height: 40px;
+	border-radius: 50px;
+}
+.lang-box p {
+	font-family: 'helvetica';
+	padding: 30px;
+	font-size: 26px;
+
+}
+.nav-lang ul {
+	display: flex;
+	flex-wrap: wrap;
+	list-style: none;
+	margin: auto;
+	background-color: lightgoldenrodyellow;
+	border-bottom-left-radius: 50px;
+	border-bottom-right-radius: 50px;
+}
+.nav-lang ul li {
+	width: 20%;
+}
+.nav-lang ul li a {
+	display: block;
+	text-decoration: none;
+	border-top: 1px solid red;
+	color: black;
+	font-family: 'helvetica';
+	padding: 20px 0;
+	text-align: center;
+}
+.nav-lang span {
+	font-family: 'helvetica';
+	font-size: 20px;
+	font-weight: bold;
+}
+
+
+/*meni*/
+.main-banner2 {
+	display: flex;
+	width: 80%;
+	margin: auto;
+	align-items: center;
+	justify-content: space-around;
+	padding-top: 200px;
+}
+.main-banner2 h2 {
+	font-size: 80px;
+	color: white;
+
+}
+.main-banner2 p {
+	background-color: #ef4341;
+	border-radius: 20px;
+	padding: 10px 10px;
+	color: white;
+}
+div.main-banner3 {
+	min-height: 600px;
+	background-image: url(../img/pictures/burger.jpg);
+		background-size: cover;
+	 background-position: center;
+  background-repeat: no-repeat;
+  margin: 30px 0;
+}
+div.main-banner4 {
+	min-height: 600px;
+	background-image: url(../img/pictures/batak.jpg);
+	background-size: cover;
+	background-position: center;
+  	background-repeat: no-repeat;
+  	margin: 30px 0;
+}
+.ul {
+	list-style: none;
+	font-family: 'helvetica';
+}
+.ul li {
+	width: 100%;
+}
+.meni {
+	font-size: 20px;
+	font-weight: bold;
+	color: #444444;
+}
+
+.border  {
+	padding-right: 700px;
+	border-top: 1px dashed black;
+
+}
+.container .box-5 {
+	opacity: 0;
+}
+.container .box-6 {
+	opacity: 0;
+}
+.box-5 h3{
+	text-align: center;
+	margin-right:  900px;
+	margin-top: 50px;
+	margin-bottom: 30px;
+	border-radius: 20px;
+	background-color: #ef4341;
+}
+.box-6 h3{
+	text-align: center;
+	margin-right:  900px;
+	margin-top: 50px;
+	margin-bottom: 30px;
+	border-radius: 20px;
+	background-color: #ef4341;
+}
+.box-7 h3{
+	text-align: center;
+	margin-right:  900px;
+	margin-top: 50px;
+	margin-bottom: 30px;
+	border-radius: 20px;
+	background-color: #ef4341;
+}
+.button-2{
+	text-decoration: none;
+	color: white;
+	top: 30px;
+	margin-top: 30px;
+	margin-left: 30px;
+	position: relative;
+	padding: 10px 30px;
+	background-color: #ef4341;
+	border-top-left-radius: 50%;
+	border-bottom-left-radius: 50%;
+	border-top-right-radius: 20%;
+	border-bottom-right-radius: 20%;
+}
+
+/*section*/
+.div {
+	background-color: #f4f0ed;
+
+}
+.div h2 {
+	text-align: center;
+	padding:  30px 0;
+	font-size: 30px;
+	border-bottom: 1px solid black;
+	background-color: #ffffb3;
+}
+/*start flex*/
+.boxes {
+	display: flex;
+ 	flex-wrap: wrap;
+ 	padding: 50px 0;
+}
+.box {
+	width: 33.33%;
+ 	padding-right: 15px;
+ 	display: flex;
+ 	flex-direction: column;
+ 	justify-content: space-between;	 
+}
+ .box:nth-child(3n+0) {
+ 	padding-right: 0;
+ }
+  .box h2 {
+ 	
+ 	font-size: 21px;
+ 	padding: 25px 15px;
+	text-align: center;
+	text-transform: uppercase;
+ 	background-color: #c9bcb0;
+ }
+
+ .box p {
+ 	font-size: 14px;
+ 	color: grey;
+ 	padding: 20px;
+ 	background-color: #eee9e5;
+ 	height: 200px;
+ }
+ .box a {
+ 	color:  #4d4d4d;
+ 	padding: 10px 25px;
+ 	font-size: 18px;
+ 	text-decoration: none;
+ 	text-transform: capitalize;
+ }
+ .box a:hover {
+ 	color: grey;
+ }
+.boxes img {
+	width: 100%;
+	height: 220px; 
+}
+.boxes h1 {
+}
+/*div flex*/
+.box2 {
+	margin-top: 50px;
+	width: 100%;	
+}
+.box-wrapper {
+	display: flex;
+    flex-wrap: wrap;
+    padding-top: 50px
+}
+.box-wrapper.blog .boxes2 {
+    width: 50%;
+}
+.boxes2 {
+	height: 600px;
+}
+.boxes2 img{
+	width: 100%;
+	height: 100%;
+}
+.boxes2 .blog2 {
+	margin-top: 150px;
+	width: 100%;
+}
+.boxes2 .blog2 h2 {
+	text-align: center;
+	text-transform: uppercase;
+	color: #90765e;
+	margin: 50px 0;
+}
+.boxes2 .blog2 ul {
+	
+	text-align: left;
+	margin: 20px 40px;
+	
+}
+.boxes2 .blog2 p {
+	text-align: left;
+	margin: 10px 20px;
+}
+/*footer*/
+.footer-wrapper {
+	background-image: url(../img/grid.jpg);
+    padding-top: 30px;
+}
+.footer{
+    display: flex;
+    justify-content: center;
+   
+}
+.footer .box-3 {
+	width: 33.3%;
+	padding: 0px 100px;
+
+}
+.footer .box-3 ul {
+	list-style: none;
+}
+.footer .box-3 h4{ 
+	color: yellow;
+	font-family: 'helvetica';
+ }
+.footer .box-3 ul li  a {
+	text-decoration: none;
+	color: grey;
+	font-size: 13px;
+	font-family: 'helvetica';
+}
+.footer .box-3 ul li  a:hover {
+	color: yellow;
+	transition: 0.5s;
+}
+.copy {
+	text-align: center;
+	color: white;
+	padding:  20px;
+	font-family: 'helvetica';
+}
+.logo1 {
+	margin-right: 0px;	
+	width: 200px;
+}
+.burger {
+
+  width: 50px;
+  background-color: transparent;
+  border: 0;
+  display: none;
+  cursor: pointer;
+}
+
+
+@media(max-width: 1600px) {
+	
+.about {
+	width: 100%;
+}
+}
+@media(max-width: 800px) {
+	.nav {
+		display: none;
+	    width: 100%;
+	    position: absolute;
+	    top: 100%;
+	    left: 0;
+	    background-color: orange;
+	    padding: 60px 0;
+	}
+	.slider-wrapper {
+		display: none;
+	}
+	
+	.nav ul {
+		flex-direction: column;
+    	align-items: center;
+	}
+	.burger {
+		display: block;
+	}
+	.main-banner {
+    min-height: 300px;
+  }
+  .box {
+    width: 100%;
+    padding: 0;
+    margin-bottom: 20px;
+  }
+  .box h2 {
+    font-size: 24px;
+  }
+  .box-wrapper.blog .boxes2 {
+    width: 100%;
+}
+ .banner .main-banner p {
+  	width: 100%;
+  	padding: 0;
+  	border: none;
+  	font-size: 18px;
+  	text-align: center;
+  	padding-right: 110px;
+  }
+.footer .box-3  {
+	flex-direction:  column;
+
+}
+.nav-lang ul {
+	flex-direction: column;
+}
+.nav-lang ul li {
+	width: 100%;
+}
+
+}
+
+
+
+@media (min-width: 800px) {
+  .nav {
+    display: flex !important;
+  }
+   div.boxes2 {
+ 	display: block;
+ }
+  .nav li a:hover {
+    background-color: white;
+    color: black;
+  }
+ 
+ 
+}
+@media(max-width: 590px ) {
+	.meni {
+		font-size: 13px;
+
+	}
+}
+@media (max-width: 470px) {
+.register-box {
+	color: red;
+}
+
+	.input {
+		width: 100%;
+		margin: 0;
+		padding: 0;		
+	}
+	.prijava {
+		width: 350px;
+		padding: 0;
+	}
+
+  input[type="email"]{
+  	width: 70%;
+  }
+  input[type="text"] {
+    width: 70%;
+  }
+  input[type="submit"] {
+    width: 50%;
+  }
+  .footer {
+  	display: block;
+  	text-align: center;
+  }
+  	.footer-wrapper {
+		margin-top: 200px;
+		display: block;
+	}
+	.footer .box-3 {
+		width: 100%;
+		display: block;
+		padding: 30px;
+	}
+	.lang {
+		width: 400px;
+	}
+	.lang-box {
+		width: 395px;
+	}
+	.nav-lang  ul {
+		display: block;
+		text-align: center;
+		width: 100%;
+	}
+	.nav-lang ul li {
+		width: 100%;
+	}
+	.banner .main-banner p {
+		display: none;
+	}
+
+}
+
+
+
+
+
+

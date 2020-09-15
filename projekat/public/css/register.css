@@ -1,0 +1,70 @@
+@import "https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css";
+
+
+* {
+	margin: 0;
+	padding: 0;
+}
+body {
+	background: url(../img/giros.jpg);
+	background-size: cover;
+	font-family: sans-serif;
+}
+.register-box {
+	width: 400px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+.register-box header {
+	font-size: 30px;
+	margin-bottom: 40px;
+	border-bottom: 6px solid #4caf50;
+	padding: 13px 0;
+	color: white;
+}
+.form-control  {
+	width: 100%;
+	padding: 8px 0;
+	margin:8px 0;
+	overflow: hidden;
+}
+.form-control input {
+	outline: none;
+	font-size: 18px;
+	width: 60%;
+	float: left;
+	margin: 0 10px;
+	padding: 2px 0;
+	background: none;
+	border: none;
+	border-bottom: 2px solid #4caf50;
+}
+.form-control label {
+	width: 30%;
+	color: white;
+	float: left;
+	text-align: center;
+	font-size: 22px;
+	color: white;
+	font-weight: bold;
+}
+.btn {
+	width: 100%;
+	text-align: center;
+	margin-top: 20px;
+	border: 2px solid #4caf50;
+	list-style: none;
+	text-decoration: none;
+	display: block;
+	color: white;
+	padding: 10px 0;
+	font-weight: bold;
+	background-color: #4caf50;
+}
+
+ button:hover {
+ 	background-color: white;
+ 	color: #4caf50;
+}
